@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Exercise:Bootstrap-Invoice</title>
+
+        <!-- BOOTSTRAP -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <link href="/css/site.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <div class="container border p-2">
+            <!-- PRINT BUTTON -->
+            <div class="row p-3">
+                <div class="col d-flex justify-content-end">
+                    <button type="button" class="btn btn-dark">Print this page</button>
+                </div>
+            </div>
+
+            <!-- HERO HEADER -->
+            <div class="row">
+                <img src="/img/IdeaFoundryLogo.png" class="col-12 col-md-10">
+                <!-- <div class="col-m-10">
+                    <img src="/img/IdeaFoundryLogo.png">
+                </div> -->
+                <div class="col-12 col-md-2 d-flex align-items-center justify-content-end"">
+                    <h3>Client No: 4908</h3>
+                </div>
+            </div>
+            <hr>
+            <!-- DATE/INVOICE -->
+            <div class="row row-cols-2">
+                <div class="col-12 col-md-6 d-flex justify-content-md-start"><span class="fw-bold">Date:</span>05/12/2019</div>
+                <div class="col col-md-6 d-flex justify-content-md-end"><span class="fw-bold">Invoice No:</span> 19005</div>
+            </div>
+            <hr>
+            <!-- ADDRESS -->
+            <div class="row">
+                <div class="col d-flex justify-content-start">
+                    <p>
+                        <span class="fw-bold">Invoice To:</span><br>
+                        Mark Davis<br>
+                        3333 AI Davis Way<br>
+                        Las Vegas, NV 89118
+                    </p>
+                </div>
+                <div class="col d-flex justify-content-end">
+                    <p>
+                        <span class="fw-bold">Pay To:</span><br>
+                        Idea Foundry,Irc.<br>
+                        2705 N. Enterprise St<br>
+                        Kernersville, NC 27284
+                    </p>
+                </div>
+            </div>
+            <div class="table-responsive">
+                <table class="table table-bordered">
+                    <tbody>
+                        <!-- HEAD -->
+                        <tr>
+                            <td scope="col">Service</td>
+                            <td scope="col">Description</td>
+                            <td scope="col">Rate</td>
+                            <td scope="col">QTY</td>
+                            <td scope="col">Amount</td>
+                        </tr>
+                        <!-- ROW-1 -->
+                        <tr class="table-light">
+                            <td>Design</td>
+                            <td>Website Design</td>
+                            <td>$60.00</td>
+                            <td>10</td>
+                            <td>$600.00</td>
+                        </tr>
+                        <!-- ROW-2 -->
+                        <tr>
+                            <td>Development</td>
+                            <td>Website Development</td>
+                            <td>$150.00</td>
+                            <td>10</td>
+                            <td>$1,500.00</td>
+                        </tr>
+                        <!-- ROW-3 -->
+                        <tr class="table-light">
+                            <td>Deployment</td>
+                            <td>Deployment and Hosting</td>
+                            <td>$450.00</td>
+                            <td>1</td>
+                            <td>$450.00</td>
+                        </tr>
+                        <!-- ROW-4 -->
+                        <tr>
+                            <td colspan="4">Sub Total:</td>
+                            <td>$2,550.00</td>
+                        </tr>
+                        <!-- ROW-5 -->
+                        <tr>
+                            <td colspan="4">Tax:</td>
+                            <td>$0.00</td>
+                        </tr>
+                        <!-- ROW-6 -->
+                        <tr>
+                            <td colspan="4">Total:</td>
+                            <td>$2,550.00</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- NOTE -->
+            <div class="row">
+                <div class="col">
+                    <p><span class="fw-bold">NOTE:</span> This is computer generated receipt and does not require physical signature</p>
+                </div>
+            </div>
+
+        </div>
+
+       
+       
+       
+       
+       
+       
+       
+       
+       
+        <!-- Bootstrap JavaScript -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    </body>
+
+</html>
